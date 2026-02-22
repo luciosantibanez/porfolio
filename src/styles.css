@@ -19,7 +19,7 @@ body {
 
 :root {
     --bg:#eaeaea;
-    --colorP:#585656;
+    --colorP:#9f9d9d;
     --colorH1:rgb(33, 30, 30);
     --resaltado:#facc15;
     --colorH1claro:#373737;
@@ -34,7 +34,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
-
+  
 }
 
 .navbar{
@@ -80,13 +80,47 @@ nav ul a:hover{
 .logo {
   width: 60px;
   height: auto;
-  color: #f01818; /* cambiás esto cuando quieras */
+  color: var(--colorSpan); /* cambiás esto cuando quieras */
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .logo:hover {
   color: #00bcd4;
+}
+
+/* Contenedor opcional */
+.navbar-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Estilo base compartido */
+.btn-primary,
+.btn-secondary {
+  padding: 0.7rem 1.6rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  background-color: var(--colorSpan);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Botón principal */
+.btn-primary {
+  
+}
+
+/* Hover */
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: var(--colorH1claro);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Experiencia */
@@ -151,13 +185,24 @@ nav ul a:hover{
 /* Hero */
 
 .dynamic-word {
-  display: inline-block;
-  transition: opacity 0.4s ease;
+  color: var(--colorSpan);
+  font-weight: 800;
+}
+
+.cursor {
+  margin-left: 4px;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
 
 .hero {
   min-height: 85vh;
   display: flex;
+  width: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -166,42 +211,29 @@ nav ul a:hover{
 
 .hero-title {
   font-size: 4rem;
-  font-weight: 1000;
+  letter-spacing: -3px;
+  font-weight: 200;
   margin-bottom: -30px;
   text-transform: uppercase;
 }
 
 .hero-title span {
   color: var(--colorSpan);
+  font-weight: 800;
+}
+
+.hero-subtitle{
+  text-align: center;
+  color: var(--colorP);
 }
 
 .hero-role {
   font-size: 4rem;
-  font-weight:800;
+  font-weight:200;
   
 }
 
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
 
-.btn-primary {
-  background: var(--colorSpan);
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-}
-
-.btn-secondary {
-  border: 1px solid var(--colorSpan);
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: var(--colorSpan);
-  text-decoration: none;
-}
 
 /* EXPERIENCIA */
 
@@ -274,59 +306,55 @@ nav ul a:hover{
 
 .proyecto-card {
   display: flex;
-  gap: 3rem;
-  padding: 3rem 0;
-  border-bottom: 1px solid #1f1f1f;
-  align-items: center;
-}
-
-.proyecto-img {
-  flex: 1;
-}
-
-/* Wrapper con efecto glass */
-.proyecto-img {
-  position: relative;
-  padding: 5px;
+  gap: 2.5rem;
   border-radius: 20px;
+  background: #ffffff;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.proyecto-img {
+  flex: 0 0 50%;
+  height: 100%;
+  border-radius: 16px 0px 0px 16px;
   overflow: hidden;
 }
 
-/* Capa blur */
-.proyecto-img::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 0;
-}
-
-/* Imagen */
 .proyecto-img img {
   width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
+  height: 100%;        /* 🔥 clave */
+  object-fit: cover;   /* 🔥 mantiene proporción */
   display: block;
-  position: relative;
-  z-index: 1;
+}
+
+.proyecto-card:hover .proyecto-img img {
+  transform: scale(1.0);
 }
 
 .proyecto-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-right: 0.5rem; */
 }
 
-.proyecto-content h3 {
+.proyecto-title {
   font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--colorSpan);
 }
 
-.proyecto-content p {
-  color: #888;
-  margin-bottom: 1.5rem;
+.proyecto-desc {
+  color: var(--colorH1claro);
+  margin-bottom: 1rem;
   line-height: 1.6;
 }
 
@@ -337,31 +365,40 @@ nav ul a:hover{
   margin-bottom: 1.5rem;
 }
 
-.proyecto-tech span {
+.tech-pill {
   font-size: 0.75rem;
-  padding: 4px 10px;
-  border: 1px solid #2a2a2a;
-  border-radius: 20px;
-  color: #aaa;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--colorP);
+  color: var(--colorPn);
+  transition: 0.3s ease;
+}
+
+.tech-pill:hover {
+  border-color: var(--colorPclaro);
+  color: var(--colorPclaro);
 }
 
 .proyecto-link {
   font-size: 0.9rem;
   text-decoration: none;
-  color: #fff;
-  opacity: 0.8;
+  color: var(--colorSpan);
+  font-weight: 900;
   transition: opacity 0.2s ease;
 }
 
 .proyecto-link:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 
 @media (max-width: 900px) {
   .proyecto-card {
     flex-direction: column;
-    gap: 2rem;
+  }
+
+  .proyecto-img {
+    flex: 100%;
   }
 }
 
@@ -369,11 +406,12 @@ nav ul a:hover{
 
 .sobre-mi {
   padding: 10rem 8%;
-  background: #0d0d0d;
+  background: #ffffff;
+  color: var(--colorH1claro);
 }
 
 .sobre-mi-container {
-  
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -381,7 +419,7 @@ nav ul a:hover{
   font-size: 0.75rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #6f6f6f;
+  color: #000000;
   margin-bottom: 1.5rem;
 }
 
@@ -390,13 +428,13 @@ nav ul a:hover{
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: #ffffff;
+  color: var(--colorH1claro);
 }
 
 .sobre-mi-description {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #b0b0b0;
+  color: var(--colorP);
   margin-bottom: 2.5rem;
 }
 
@@ -411,7 +449,7 @@ nav ul a:hover{
   padding: 6px 14px;
   border: 1px solid #2a2a2a;
   border-radius: 20px;
-  color: #cfcfcf;
+  color: var(--colorH1claro);
   transition: all 0.3s ease;
 }
 
@@ -419,14 +457,13 @@ nav ul a:hover{
   border-color: #ffffff;
   color: #ffffff;
 }
+
+
 /* FOOTER */
 
-
 .footer {
-  background: #000000;
+  background: var(--colorSpan);
   padding: 6rem 8% 3rem 8%;
-  width: 100% !important;
-  border-top: 1px solid #1a1a1a;
 }
 
 .footer-container {

@@ -1,3 +1,5 @@
+import Logo from "./logo";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -26,7 +28,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Lucio Santibañez — Todos los derechos reservados
+        © {new Date().getFullYear()} <Logo className='logo' />
       </div>
     </footer>
   );

@@ -10,38 +10,43 @@ function Proyectos({ proyectos }) {
       {proyectos.map((proyecto, index) => (
         <article key={index} className="proyecto-card">
 
-          <div className="proyecto-img">
-            <img 
-              src={proyecto.imagen} 
-              alt={proyecto.titulo} 
-            />
-          </div>
+  <div className="proyecto-img">
+    <img 
+      src={proyecto.imagen} 
+      alt={proyecto.titulo} 
+    />
+  </div>
 
-          <div className="proyecto-content">
-            <div className="proyecto-header">
-              <h3>{proyecto.titulo}</h3>
+  <div className="proyecto-content">
 
-              <div className="proyecto-links">
-                <a 
-                  href={proyecto.link} 
-                  target="_blank" 
-                  rel="noreferrer"
-                >
-                  ↗
-                </a>
-              </div>
-            </div>
+    <h3 className="proyecto-title">
+      {proyecto.titulo}
+    </h3>
 
-            <p>{proyecto.descripcion}</p>
+    <p className="proyecto-desc">
+      {proyecto.descripcion}
+    </p>
 
-            <div className="proyecto-tech">
-              {proyecto.tecnologias.map((tech, i) => (
-                <span key={i}>{tech}</span>
-              ))}
-            </div>
-          </div>
+    <div className="proyecto-tech">
+      {proyecto.tecnologias.map((tech, i) => (
+        <span key={i} className="tech-pill">
+          #{tech}
+        </span>
+      ))}
+    </div>
 
-        </article>
+    <a 
+      href={proyecto.link} 
+      target="_blank" 
+      rel="noreferrer"
+      className="proyecto-link"
+    >
+      Ver proyecto →
+    </a>
+
+  </div>
+
+</article>
       ))}
     </section>
   )

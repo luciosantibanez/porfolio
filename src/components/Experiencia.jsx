@@ -4,7 +4,7 @@ export default function Experiencia() {
       <div className="experiencia-container">
         
         <h2 className="experiencia-title">
-          <span className="icon">💼</span>
+          <img src="src/assets/matelin.png" alt="" />
           Experiencia Laboral
         </h2>
 

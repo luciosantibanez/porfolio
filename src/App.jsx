@@ -15,8 +15,9 @@ function App() {
       <Hero />
       <Experiencia />
       <Proyectos proyectos={proyectos} />
-      <SobreMi />
       </div>
+      <SobreMi />
+      
       <Footer />
       
     </>
