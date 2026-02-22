@@ -4,51 +4,37 @@ function Proyectos({ proyectos }) {
   return (
     
     <section className="proyectos-container">
-      <h2>
-        <span className="icon">{`</>`}</span> Proyectos
-      </h2>
-      {proyectos.map((proyecto, index) => (
-        <article key={index} className="proyecto-card">
+      <h2 className="clientes">Clientes</h2>
+    <div className="proyectos-grid">
+    {proyectos.map((proyecto, index) => (
+      <article 
+  key={index} 
+  className={`proyecto-card ${proyecto.size}`}
+>
+        
+        <div className="proyecto-img">
+          <img 
+            src={proyecto.imagen}
+            alt={proyecto.titulo}
+          />
+        </div>
 
-  <div className="proyecto-img">
-    <img 
-      src={proyecto.imagen} 
-      alt={proyecto.titulo} 
-    />
+        <div className="proyecto-footer">
+  <h3 className="proyecto-title">
+    {proyecto.titulo}
+  </h3>
+
+  <div className="proyecto-tech">
+    {proyecto.tecnologias.map((tech, i) => (
+      <span key={i}>{tech}</span>
+    ))}
   </div>
+</div>
 
-  <div className="proyecto-content">
-
-    <h3 className="proyecto-title">
-      {proyecto.titulo}
-    </h3>
-
-    <p className="proyecto-desc">
-      {proyecto.descripcion}
-    </p>
-
-    <div className="proyecto-tech">
-      {proyecto.tecnologias.map((tech, i) => (
-        <span key={i} className="tech-pill">
-          #{tech}
-        </span>
-      ))}
-    </div>
-
-    <a 
-      href={proyecto.link} 
-      target="_blank" 
-      rel="noreferrer"
-      className="proyecto-link"
-    >
-      Ver proyecto →
-    </a>
-
+      </article>
+    ))}
   </div>
-
-</article>
-      ))}
-    </section>
+</section>
   )
 }
 

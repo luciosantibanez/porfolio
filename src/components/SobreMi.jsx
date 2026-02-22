@@ -14,14 +14,6 @@ export default function SobreMi() {
           Trabajo con tecnologías como React, JavaScript y WordPress para construir productos
           reales que generan impacto.
         </p>
-
-        <div className="sobre-mi-stack">
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>WordPress</span>
-          <span>CSS</span>
-        </div>
-
       </div>
     </section>
   );

@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
       <Hero />
+      <div className="container">
       <Experiencia />
       <Proyectos proyectos={proyectos} />
-      </div>
       <SobreMi />
+      </div>
       
       <Footer />
       
