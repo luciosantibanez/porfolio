@@ -273,7 +273,7 @@ nav ul a:hover{
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: -3px;
-  color: var(--colorMarron);
+  color: var(--colorH1claro);
   margin-bottom: 3rem;
 }
 
@@ -368,11 +368,6 @@ nav ul a:hover{
   transition: opacity 0.2s ease;
 }
 
-.proyectos-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
 
 /* SOBRE MI */
 
