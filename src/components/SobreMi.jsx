@@ -6,13 +6,13 @@ export default function SobreMi() {
         <p className="sobre-mi-label">Sobre mí</p>
 
         <h2 className="sobre-mi-title">
-          Desarrollo soluciones digitales simples y eficientes.
+          Creo experiencias digitales que funcionan y se sienten bien.
         </h2>
 
         <p className="sobre-mi-description">
-          Soy desarrollador web enfocado en crear experiencias digitales modernas y optimizadas.
-          Trabajo con tecnologías como React, JavaScript y WordPress para construir productos
-          reales que generan impacto.
+          Me apasiona crear productos web modernos donde cada detalle importa.
+  Desde la estructura hasta la optimización final, trabajo para que cada proyecto
+  combine estética, funcionalidad y rendimiento en una experiencia fluida y profesional.
         </p>
       </div>
     </section>

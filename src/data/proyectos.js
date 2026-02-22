@@ -37,7 +37,7 @@ export const proyectos = [
   {
     titulo: "Core Construcciones España",
     descripcion: "Desarrollo de blog justo a diseñador web desde cero en Wordpress, esta pagina se caracteriza por la cantidad de entradas que tiene en WordPress.",
-    tecnologias: ["Migracion", "Mantenimiento","Servidor"],
+    tecnologias: ["Diseño", "Desarrollo","WordPress"],
     link: "https://blog.turismoandesmar.com/",
     imagen: core,
   },
@@ -51,14 +51,14 @@ export const proyectos = [
   {
     titulo: "Lujan Turismo",
     descripcion: "Desarrollo de blog justo a diseñador web desde cero en Wordpress, esta pagina se caracteriza por la cantidad de entradas que tiene en WordPress.",
-    tecnologias: ["Migracion", "Mantenimiento","Servidor"],
+    tecnologias: ["Diseño", "Desarrollo","WordPress"],
     link: "https://blog.turismoandesmar.com/",
     imagen: lujanTurismo,
   },
    {
     titulo: "Nutre",
     descripcion: "Desarrollo de blog justo a diseñador web desde cero en Wordpress, esta pagina se caracteriza por la cantidad de entradas que tiene en WordPress.",
-    tecnologias: ["Migracion", "Mantenimiento","Servidor"],
+    tecnologias: ["Rendimiento", "Mantenimiento","Cambios"],
     link: "https://blog.turismoandesmar.com/",
     imagen: nutre,
   },
@@ -72,7 +72,7 @@ export const proyectos = [
   {
    titulo: "Gastrosud",
    descripcion: "Desarrollo de blog justo a diseñador web desde cero en Wordpress, esta pagina se caracteriza por la cantidad de entradas que tiene en WordPress.",
-   tecnologias: ["WordPress", "Elementor"],
+   tecnologias: ["Rendimiento", "Mantenimiento"],
    link: "https://blog.turismoandesmar.com/",
    imagen: gastrosud,
  },
@@ -87,7 +87,7 @@ export const proyectos = [
    {
     titulo: "Alterfocus",
     descripcion: "Desarrollo de blog justo a diseñador web desde cero en Wordpress, esta pagina se caracteriza por la cantidad de entradas que tiene en WordPress.",
-    tecnologias: ["Migracion", "Mantenimiento","Servidor"],
+    tecnologias: ["Diseño","Desarrollo","WordPress","Elementor"],
     link: "https://blog.turismoandesmar.com/",
     imagen: alterfocus,
   },
