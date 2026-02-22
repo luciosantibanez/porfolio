@@ -194,7 +194,7 @@ nav ul a:hover{
 
 .hero-subtitle{
   text-align: center;
-  color: var(--colorMarron);
+  color: var(--colorH1claro);
   font-size: 10rem;
   font-weight: 900;
   letter-spacing: -8px;
@@ -283,13 +283,6 @@ nav ul a:hover{
   gap: 4rem;
 }
 
-
-@media (max-width: 900px) {
-  .proyectos-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 .proyecto-card {
   display: flex;
   flex-direction: column;
@@ -375,14 +368,10 @@ nav ul a:hover{
   transition: opacity 0.2s ease;
 }
 
-@media (max-width: 900px) {
-  .proyecto-card {
-    flex-direction: column;
-  }
-
-  .proyecto-img {
-    flex: 100%;
-  }
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 /* SOBRE MI */
@@ -524,3 +513,140 @@ nav ul a:hover{
 }
 /* MEDIA QUERYS */
 
+@media (max-width: 1024px) {
+
+  /* HERO */
+  .hero-subtitle {
+    font-size: 6rem;
+    letter-spacing: -4px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-role {
+    font-size: 2rem;
+  }
+
+  /* EXPERIENCIA */
+  .experiencia-item {
+    grid-template-columns: 1fr;
+    padding: 0 4rem;
+    gap: 1rem;
+  }
+
+  /* SOBRE MI */
+  .sobre-mi {
+    margin: 10rem 0 6rem 0;
+    padding: 3rem;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    gap: 2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .container {
+    max-width: 90%;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: none; /* después podemos hacer menú hamburguesa */
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 70vh;
+    padding: 4rem 0;
+  }
+
+  .hero-subtitle {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+  }
+
+  .hero-role {
+    font-size: 1.5rem;
+  }
+
+  /* EXPERIENCIA */
+  .experiencia {
+    margin: 5rem 0;
+  }
+
+  .experiencia-item {
+    padding: 0 2rem;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  /* PROYECTOS */
+  .clientes {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .proyecto-footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .proyecto-tech {
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+
+  /* SOBRE MI */
+  .sobre-mi {
+    margin: 6rem 0;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .sobre-mi-title {
+    letter-spacing: -2px;
+  }
+
+  .sobre-mi-description {
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 4rem 6% 2rem 6%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+  }
+
+}
