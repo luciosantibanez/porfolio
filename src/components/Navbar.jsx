@@ -26,7 +26,7 @@ export default function Navbar() {
           <a href="#proyectos" className="btn-primary">
             Trabajos
           </a>
-          <a href="#contacto" className="btn-secondary">
+          <a href="https://www.linkedin.com/in/lucio-santiba%C3%B1ez/" className="btn-secondary">
             LinkedIn
           </a>
         </div>

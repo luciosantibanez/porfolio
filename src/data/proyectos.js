@@ -1,13 +1,13 @@
-import andesmarIndustrial from "../assets/andesmarindustrial.png";
-import andesmarTurismo from "../assets/andesmarTurismo.png";
-import laPiramide from "../assets/lapiramidePORTADA.png"
-import casaDeVinos from "../assets/vinoteca.png"
-import gastrosud from "../assets/gastrosudPORTADA.png"
+import andesmarIndustrial from "../assets/andesmarindustrial.webp";
+import andesmarTurismo from "../assets/andesmarTurismo.webp";
+import laPiramide from "../assets/lapiramidePORTADA.webp"
+import casaDeVinos from "../assets/vinoteca.webp"
+import gastrosud from "../assets/gastrosudPORTADA.webp"
 import rennova from "../assets/rennovaport.webp"
-import hospitalEspaniol from "../assets/hospital.png"
-import nutre from "../assets/nutre.png"
+import hospitalEspaniol from "../assets/hospital.webp"
+import nutre from "../assets/nutre.webp"
 import lujanTurismo from "../assets/turismoLujan.webp"
-import alterfocus from "../assets/pagina.png"
+import alterfocus from "../assets/pagina.webp"
 import core from "../assets/core.webp"
 
 
