@@ -544,6 +544,14 @@ nav ul a:hover{
 
 }
 
+@media (max-width: 1440px){
+  .hero-subtitle {
+    font-size: 5rem;
+    letter-spacing: -4px;
+  }
+
+}
+
 @media (max-width: 768px) {
 
   /* CONTAINER */
@@ -562,27 +570,46 @@ nav ul a:hover{
     display: none; /* después podemos hacer menú hamburguesa */
   }
 
-  /* HERO */
-  .hero {
-    min-height: 70vh;
-    padding: 4rem 0;
+  /* HERO MOBILE */
+
+    .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
   }
 
+  .hero h1 {
+    font-size: 2.4rem;
+    line-height: 1;
+    font-weight: 900;
+    color: var(--colorH1claro);
+    letter-spacing: -1px;
+  }
+
+
   .hero-subtitle {
-    font-size: 3.5rem;
-    letter-spacing: -2px;
-    line-height: 3rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+    border: 1px black;
+
   }
 
   .hero-title {
     font-size: 2.2rem;
     letter-spacing: -1px;
+    color: var(--colorH1claro);
     margin-bottom: 0;
   }
 
   .hero-role {
     font-size: 1.9rem;
+    color: var(--colorH1claro);
+    font-weight: 900;
   }
 
   /* EXPERIENCIA */
@@ -624,11 +651,25 @@ nav ul a:hover{
   }
 
   /* SOBRE MI */
+
   .sobre-mi {
-    margin: 6rem 0;
-    padding: 2rem;
-    border-radius: 30px;
+  margin: 6rem 0;
+  padding: 2rem;
+  border-radius: 30px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  .sobre-mi-title {
+    letter-spacing: -2px;
   }
+
+  .sobre-mi-description {
+    font-size: 1rem;
+  }
+
 
   .sobre-mi-title {
     letter-spacing: -2px;

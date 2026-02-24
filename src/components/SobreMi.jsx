@@ -1,6 +1,9 @@
+import gradient from "../assets/gradient.webp";
 export default function SobreMi() {
   return (
-    <section id="sobre-mi" className="sobre-mi">
+    <section id="sobre-mi" className="sobre-mi" style={{
+    backgroundImage: `url(${gradient})`,
+  }}>
       <div className="sobre-mi-container">
 
         <p className="sobre-mi-label">Sobre mí</p>
@@ -11,8 +14,8 @@ export default function SobreMi() {
 
         <p className="sobre-mi-description">
           Me apasiona crear productos web modernos donde cada detalle importa.
-  Desde la estructura hasta la optimización final, trabajo para que cada proyecto
-  combine estética, funcionalidad y rendimiento en una experiencia fluida y profesional.
+          Desde la estructura hasta la optimización final, trabajo para que cada proyecto
+          combine estética, funcionalidad y rendimiento en una experiencia fluida y profesional.
         </p>
       </div>
     </section>

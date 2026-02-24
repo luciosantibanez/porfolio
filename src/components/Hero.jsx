@@ -1,3 +1,4 @@
+import gradient from "../assets/gradient.webp";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
@@ -31,18 +32,19 @@ export default function Hero() {
   }, [text, isDeleting, index]);
 
   return (
-    <section className="hero">
+    <section className="hero" style={{ backgroundImage: `url(${gradient})` }}>
       <div className="hero-content">
-        <p className="hero-subtitle">PORTFOLIO 2026</p>
 
         <h1 className="hero-title">
-          Hola, <span>soy Lucio</span>
+          Hola, soy Lucio
         </h1>
 
         <h2 className="hero-role">
           <span className="dynamic-word">{text}</span> Web
           <span className="cursor">|</span>
         </h2>
+
+        <p className="hero-subtitle">PORTFOLIO 2026</p>
       </div>
     </section>
   );
