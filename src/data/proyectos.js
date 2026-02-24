@@ -1,4 +1,4 @@
-import andesmarIndustrial from "../assets/andesmarindustrial.webp";
+import andesmarIndustrial from "../assets/andesindus.webp";
 import andesmarTurismo from "../assets/andesmarTurismo.webp";
 import laPiramide from "../assets/lapiramidePORTADA.webp"
 import casaDeVinos from "../assets/vinoteca.webp"
