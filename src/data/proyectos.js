@@ -6,7 +6,7 @@ import gastrosud from "../assets/gastrosudPORTADA.webp"
 import rennova from "../assets/rennovaport.webp"
 import hospitalEspaniol from "../assets/hospital.webp"
 import nutre from "../assets/nutre.webp"
-import lujanTurismo from "../assets/turismoLujan.webp"
+import lujanTurismo from "../assets/lujan.webp"
 import alterfocus from "../assets/pagina.webp"
 import core from "../assets/core.webp"
 

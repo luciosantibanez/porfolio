@@ -395,42 +395,10 @@ nav ul a:hover{
   position: relative;
   overflow: hidden;
   color: var(--colorMarron);
-  background-color: #d8d2c8;
-  background-image:
-    /* NARANJA superior grande */
-    radial-gradient(
-      800px 500px at 10% 100%,
-      rgba(255, 140, 40, 0.9) 0%,
-      rgba(255, 140, 40, 0.6) 30%,
-      rgba(255, 140, 40, 0.25) 55%,
-      transparent 75%
-    ),
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    /* ROSA lateral derecha */
-    radial-gradient(
-      600px 600px at 95% 30%,
-      rgba(255, 112, 80, 0.85) 0%,
-      rgba(255, 60, 11, 0.472) 30%,
-      rgba(237, 49, 20, 0.2) 55%,
-      transparent 80%
-    ),
-
-    /* AMARILLO inferior */
-    radial-gradient(
-      700px 400px at 80% 00%,
-      rgba(255, 185, 90, 0.8) 0%,
-      rgba(255, 185, 90, 0.5) 30%,
-      rgba(255, 185, 90, 0.2) 60%,
-      transparent 80%
-    ),
-
-    /* LUZ central suave */
-    radial-gradient(
-      900px 600px at 50% 50%,
-      rgba(255, 245, 225, 0.8) 0%,
-      rgba(240, 232, 220, 0.9) 40%,
-      rgba(220, 212, 200, 1) 100%
-    );
+  
 }
 
 /* Label pequeño arriba */
